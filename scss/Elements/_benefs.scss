@@ -3,25 +3,26 @@
 
 .benefs {
   background: $color-light-grey;
-  width: 100%;
   padding-top: 100px;
 }
 
 .benefs-wrapper {
+  max-width: 1124px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 105px;
   margin-bottom: 105px;
 }
 
 .benefs-card1 {
+  width: 100%;
   background: $color-white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 370px;
   margin-bottom: 40px;
   z-index: 1;
 
@@ -31,6 +32,7 @@
 
     h2 {
       font-size: 36px;
+      font-family: $prim-font;
       font-weight: 400;
       padding-top: 91px;
       padding-bottom: 30px;
@@ -39,6 +41,7 @@
     p {
       font-size: 16px;
       font-family: $text-font;
+      line-height: 19px;
       width: 416px;
       padding-bottom: 90px;
 
@@ -54,15 +57,13 @@
 }
 
 .card1-logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative;
 
   img {
     padding: 113px 117px 40px 0;
     z-index: 1;
+
+
   }
 
   &::after {
@@ -81,6 +82,7 @@
 }
 
 .benefs-card2 {
+  width: 100%;
   background: $color-white;
   display: flex;
   justify-content: space-between;
@@ -139,6 +141,7 @@
 }
 
 .benefs-card3 {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;

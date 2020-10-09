@@ -24,19 +24,67 @@ a {
 }
 
 
-
-
 //MEDIA
-
-@media (max-width: 700px) {
-  .header-nav ul li {
-    margin-right: 50px
+@media (max-width: 1024px) {
+  .stats-wrapper {
+    justify-content: space-evenly;
+  }
+  .benefs-card1 {
+    flex-direction: column-reverse;
+    width: auto;
   }
 }
 
-@media (max-width: 550px) {
+
+@media (max-width: 780px) {
   .header-nav ul li {
-    margin-right: 20px
+    margin-right: 50px
+  }
+  .opening-banner {
+    height: 420px;
+  }
+  .benefs-card1 {
+    flex-direction: column-reverse;
+    width: auto;
+
+
+
+    .card1-texts h2 {
+        font-size: 30px;
+      }
+
+    .card1-texts p {
+      width: 300px;
+        font-size: 16px;
+
+        &::after {
+          display: none;
+        }
+      }
+
+    .card1-logo {
+      position: relative;
+
+      img {
+        width: 192px * 1.5;
+        height: 109px *1.5;
+        padding: 37px 65px 0 55px;
+      }
+
+      &::after {
+        display: block;
+        content: "";
+        background: $color-redish;
+        width: 90px;
+        height: 90px;
+        border-radius: 41px;
+        position: absolute;
+        top: 15px;
+        right: 60px;
+        transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+        z-index: -1;
+      }
+    }
   }
 }
 
@@ -44,6 +92,58 @@ a {
   .header-wrapper .header-nav {
     display: none;
   }
+  .opening-banner {
+    height: 267px;
+  }
+
+  .opening-wrapper h1 {
+    font-size: 35px;
+    text-transform: capitalize;
+    margin: 170px 0 0 0;
+  }
+
+  .opening-wrapper p {
+    max-width: 380px;
+    text-align: center;
+    font-size: 16px;
+    padding: 28px 32px;
+  }
+  .opening-wrapper .btn-cta {
+    padding: 22px 92px;
+  }
+  .opening-banner {
+    height: 267px;
+  }
+
+  .stats h2 {
+    font-size: 36px;
+    font-weight: 400;
+    margin: 56px 36px;
+    text-align: center;
+  }
+
+  .stats-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .stats-card {
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  //.benefs-card .card1-texts p{
+  //  width: 272px;
+  //}
+
+  .benefs-card2 {
+    flex-direction: column;
+  }
+
+  .benefs-card3 {
+    flex-direction: column;
+  }
+
+
 }
 
 

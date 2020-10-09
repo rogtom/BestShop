@@ -3,42 +3,35 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 1124px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .stats h2 {
   font-size: 36px;
   font-weight: 400;
-  padding: 100px 0;
+  margin: 100px 36px;
   text-align: center;
 }
 
 .stats-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
   width: 100%;
 }
 
-.stats-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  flex-wrap: wrap;
-}
+
 
 .stats-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 185px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  padding: 0 25px;
+  margin-bottom: 120px;
 }
 
 
@@ -57,7 +50,7 @@
 .stats-cars-icon1::after {
   display: block;
   content: "";
-  background: url("../assets/Person.svg");
+  background: url("assets/Person.svg");
   width: 44px;
   height: 52px;
   position: absolute;
@@ -74,7 +67,7 @@
 .stats-cars-icon2::after {
   display: block;
   content: "";
-  background: url("../assets/Eye.svg") no-repeat;
+  background: url("assets/Eye.svg") no-repeat;
   width: 66px;
   height: 37px;
   position: absolute;
@@ -103,12 +96,14 @@
   font-weight: bold;
   letter-spacing: 6px;
   text-align: center;
-  padding: 15px 0 20px 0;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .stats-counter + p {
   font-size: 17px;
-  color: var(--color-grey);
+  font-family: $prim-font;
+  color: $color-grey;
   text-align: center;
-  padding-bottom: 150px;
+
 }

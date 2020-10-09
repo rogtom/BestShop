@@ -118,18 +118,21 @@ table {
 .opening-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .opening-wrapper h1 {
   font-size: 49px;
   text-transform: capitalize;
+  font-family: "Raleway", sans-serif;
   margin: 200px 0 0 0;
 }
 
 .opening-wrapper p {
   font-size: 16px;
+  line-height: 22px;
+  font-family: "Open Sans", sans-serif;
   padding: 20px 0 38px 0;
 }
 
@@ -139,11 +142,11 @@ table {
   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
   padding: 22px 157px;
   color: #fff;
-  font-family: var(--text-font);
+  font-family: "Open Sans", sans-serif;
 }
 
 .opening-banner {
-  background: url("../../assets/Background.png") no-repeat bottom/cover;
+  background: url("../../assets/Background.png") no-repeat top/cover;
   width: 100%;
   height: 594px;
 }
@@ -153,30 +156,24 @@ table {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 1124px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .stats h2 {
   font-size: 36px;
   font-weight: 400;
-  padding: 100px 0;
+  margin: 100px 36px;
   text-align: center;
 }
 
 .stats-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.stats-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+  justify-content: space-evenly;
+  align-items: flex-start;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .stats-card {
@@ -184,10 +181,8 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 185px;
-}
-.stats-card:last-child {
-  margin-right: 0;
+  padding: 0 25px;
+  margin-bottom: 120px;
 }
 
 .stats-icon-circle {
@@ -204,7 +199,7 @@ table {
 .stats-cars-icon1::after {
   display: block;
   content: "";
-  background: url("../assets/Person.svg");
+  background: url("assets/Person.svg");
   width: 44px;
   height: 52px;
   position: absolute;
@@ -220,7 +215,7 @@ table {
 .stats-cars-icon2::after {
   display: block;
   content: "";
-  background: url("../assets/Eye.svg") no-repeat;
+  background: url("assets/Eye.svg") no-repeat;
   width: 66px;
   height: 37px;
   position: absolute;
@@ -249,37 +244,39 @@ table {
   font-weight: bold;
   letter-spacing: 6px;
   text-align: center;
-  padding: 15px 0 20px 0;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .stats-counter + p {
   font-size: 17px;
-  color: var(--color-grey);
+  font-family: "Raleway", sans-serif;
+  color: #A5A5A5;
   text-align: center;
-  padding-bottom: 150px;
 }
 
 .benefs {
   background: #F7F7F7;
-  width: 100%;
   padding-top: 100px;
 }
 
 .benefs-wrapper {
+  max-width: 1124px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 105px;
   margin-bottom: 105px;
 }
 
 .benefs-card1 {
+  width: 100%;
   background: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 370px;
   margin-bottom: 40px;
   z-index: 1;
 }
@@ -288,6 +285,7 @@ table {
 }
 .benefs-card1 .card1-texts h2 {
   font-size: 36px;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   padding-top: 91px;
   padding-bottom: 30px;
@@ -295,6 +293,7 @@ table {
 .benefs-card1 .card1-texts p {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
+  line-height: 19px;
   width: 416px;
   padding-bottom: 90px;
 }
@@ -307,10 +306,6 @@ table {
 }
 
 .card1-logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative;
 }
 .card1-logo img {
@@ -333,6 +328,7 @@ table {
 }
 
 .benefs-card2 {
+  width: 100%;
   background: #fff;
   display: flex;
   justify-content: space-between;
@@ -391,6 +387,7 @@ table {
 }
 
 .benefs-card3 {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -754,19 +751,116 @@ a {
   color: #000000;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
+  .stats-wrapper {
+    justify-content: space-evenly;
+  }
+
+  .benefs-card1 {
+    flex-direction: column-reverse;
+    width: auto;
+  }
+}
+@media (max-width: 780px) {
   .header-nav ul li {
     margin-right: 50px;
   }
-}
-@media (max-width: 550px) {
-  .header-nav ul li {
-    margin-right: 20px;
+
+  .opening-banner {
+    height: 420px;
+  }
+
+  .benefs-card1 {
+    flex-direction: column-reverse;
+    width: auto;
+  }
+  .benefs-card1 .card1-texts h2 {
+    font-size: 30px;
+  }
+  .benefs-card1 .card1-texts p {
+    width: 300px;
+    font-size: 16px;
+  }
+  .benefs-card1 .card1-texts p::after {
+    display: none;
+  }
+  .benefs-card1 .card1-logo {
+    position: relative;
+  }
+  .benefs-card1 .card1-logo img {
+    width: 288px;
+    height: 163.5px;
+    padding: 37px 65px 0 55px;
+  }
+  .benefs-card1 .card1-logo::after {
+    display: block;
+    content: "";
+    background: #FB3B64;
+    width: 90px;
+    height: 90px;
+    border-radius: 41px;
+    position: absolute;
+    top: 15px;
+    right: 60px;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+            transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    z-index: -1;
   }
 }
 @media (max-width: 470px) {
   .header-wrapper .header-nav {
     display: none;
+  }
+
+  .opening-banner {
+    height: 267px;
+  }
+
+  .opening-wrapper h1 {
+    font-size: 35px;
+    text-transform: capitalize;
+    margin: 170px 0 0 0;
+  }
+
+  .opening-wrapper p {
+    max-width: 380px;
+    text-align: center;
+    font-size: 16px;
+    padding: 28px 32px;
+  }
+
+  .opening-wrapper .btn-cta {
+    padding: 22px 92px;
+  }
+
+  .opening-banner {
+    height: 267px;
+  }
+
+  .stats h2 {
+    font-size: 36px;
+    font-weight: 400;
+    margin: 56px 36px;
+    text-align: center;
+  }
+
+  .stats-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stats-card {
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+
+  .benefs-card2 {
+    flex-direction: column;
+  }
+
+  .benefs-card3 {
+    flex-direction: column;
   }
 }
 /*# sourceMappingURL=main.css.map */
