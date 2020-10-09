@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap');
+@import "Generic/reset";
+@import "Settings/all";
+@import "Settings/variables";
+@import "Partials/class";
+@import "Elements/header";
+@import "Elements/opening";
+@import "Elements/stats";
+@import "Elements/benefs";
+@import "Elements/pricing";
+@import "Elements/questions";
+
+//ALL
+
+body {
+  box-sizing: border-box;
+  background: $color-white;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: $color-black;
+}
+
+
+
+
+//MEDIA
+
+@media (max-width: 700px) {
+  .header-nav ul li {
+    margin-right: 50px
+  }
+}
+
+@media (max-width: 550px) {
+  .header-nav ul li {
+    margin-right: 20px
+  }
+}
+
+@media (max-width: 470px) {
+  .header-wrapper .header-nav {
+    display: none;
+  }
+}
+
+
+
+
+

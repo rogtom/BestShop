@@ -1,0 +1,190 @@
+
+
+
+.benefs {
+  background: $color-light-grey;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.benefs-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 105px;
+  margin-bottom: 105px;
+}
+
+.benefs-card1 {
+  background: $color-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 370px;
+  margin-bottom: 40px;
+  z-index: 1;
+
+
+  .card1-texts {
+    padding: 0 0 0 35px;
+
+    h2 {
+      font-size: 36px;
+      font-weight: 400;
+      padding-top: 91px;
+      padding-bottom: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: $text-font;
+      width: 416px;
+      padding-bottom: 90px;
+
+      &::after {
+        display: block;
+        content: "";
+        width: 328px;
+        border-bottom: 4px solid $color-redish;
+        padding-top: 50px;
+      }
+    }
+  }
+}
+
+.card1-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  img {
+    padding: 113px 117px 40px 0;
+    z-index: 1;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    background: $color-redish;
+    width: 180px;
+    height: 180px;
+    border-radius: 41px;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    z-index: -1;
+  }
+}
+
+.benefs-card2 {
+  background: $color-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 370px;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 40px;
+
+  img {
+    width: 476px;
+    height: 328px;
+    padding: 20px 0 15px 70px;
+    z-index: 1;
+  }
+}
+.card2-logo {
+  &::after {
+    display: block;
+    content: "";
+    width: 320px;
+    height: 320px;
+    background: $primary-color;
+    border-radius: 50%;
+    position: absolute;
+    top:12px;
+    left:70px;
+    z-index: -1;  ;
+  }
+}
+.card2-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 416px;
+  height: 100%;
+  padding: 20px;
+}
+
+.card2-texts::after {
+  display: block;
+  content: "";
+  width:328px;
+  border-bottom: 4px solid $primary-color;
+}
+
+.card2-texts h2 {
+  font-size: 36px;
+  font-weight: 400;
+  padding-top: 70px;
+}
+.card2-texts p {
+  font-size: 16px;
+  font-family: var(--text-font);
+  padding: 30px 0 50px 0;
+}
+
+.benefs-card3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 370px;
+  padding-bottom: 105px;
+}
+
+.card3-texts {
+  padding: 0 0 0 35px;
+  background: $color-white;
+  width: 554px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+}
+.card3-texts h2 {
+  font-size: 36px;
+  font-weight: 400;
+  padding:70px 0  30px 0;
+}
+.card3-texts p {
+  font-size: 16px;
+  font-family: var(--text-font);
+  padding-bottom: 44px;
+  width: 553px;
+  display: flex;
+  flex-direction: column;
+}
+.card3-texts p::after {
+  display: block;
+  content: "";
+  width:328px;
+  border-bottom: 4px solid $primary-color;
+  padding-bottom: 44px;
+
+}
+.logo-tube {
+  background: $color-green;
+  width: 440px;
+  height: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-tube img {
+  width: 296px;
+  height: 207px;
+}

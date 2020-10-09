@@ -1,0 +1,58 @@
+.footer {
+  background: $color-light-grey;
+  box-shadow: 0 -5px 40px #00000029;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 21px;
+}
+.footer-logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: 136px;
+}
+.footer-logo-wrapper h2 {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 30px;
+  color: $primary-color;
+  display: flex;
+}
+.footer-logo-wrapper span {
+  font-size: 11px;
+  font-family: $text-font;
+  font-weight: 400;
+  line-height: 15px;
+  color: $color-grey;
+  align-self: flex-start;
+  padding: 6px 0 17px 0;
+
+
+}
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 136px;
+
+}
+.tweet {
+  background: url("../assets/Twitter.svg") no-repeat center/cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+.face {
+  background: url("../assets/Facebook.svg") no-repeat center/cover;
+  width: 24px;
+  height: 24px;
+}
+

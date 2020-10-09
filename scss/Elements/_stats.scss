@@ -1,0 +1,114 @@
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.stats h2 {
+  font-size: 36px;
+  font-weight: 400;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.stats-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.stats-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.stats-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 185px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+
+.stats-icon-circle {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+}
+
+
+.stats-cars-icon1 {
+  background: $color-redish;
+  position: relative;
+}
+
+.stats-cars-icon1::after {
+  display: block;
+  content: "";
+  background: url("../assets/Person.svg");
+  width: 44px;
+  height: 52px;
+  position: absolute;
+  left: 50%;
+  top: 3px;
+}
+
+.stats-cars-icon2 {
+  background: $primary-color;
+  position: relative;
+
+}
+
+.stats-cars-icon2::after {
+  display: block;
+  content: "";
+  background: url("../assets/Eye.svg") no-repeat;
+  width: 66px;
+  height: 37px;
+  position: absolute;
+  top: 22%;
+  left: 40%;
+}
+
+.stats-cars-icon3 {
+  background: $color-green;
+  position: relative;
+}
+
+.stats-cars-icon3::after {
+  display: block;
+  content: "";
+  background: url("../assets/Catalog.svg");
+  width: 52px;
+  height: 48px;
+  position: absolute;
+  left: 50%;
+  top: 5px;
+}
+
+.stats-counter {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  text-align: center;
+  padding: 15px 0 20px 0;
+}
+
+.stats-counter + p {
+  font-size: 17px;
+  color: var(--color-grey);
+  text-align: center;
+  padding-bottom: 150px;
+}

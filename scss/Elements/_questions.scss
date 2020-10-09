@@ -1,0 +1,174 @@
+
+/*QUESTIONS*/
+
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;;
+}
+
+.questions-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 155px;
+}
+
+.questions-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 342px;
+}
+
+.questions-texts h2 {
+  font-size: 49px;
+  font-weight: 400;
+  padding-bottom: 22px;
+  padding-right: 117px;
+}
+
+.questions-texts p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: $text-font;
+  line-height: 22px;
+
+}
+
+.questions-text-contact {
+  display: flex;
+  color: $color-grey;
+  margin-top: 42px;
+
+}
+
+.cont-email {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cont-email::before {
+  display: block;
+  content: "";
+  background: url("../assets/Mail Icon.svg");
+  width: 27px;
+  height: 27px;
+}
+
+.cont-phone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cont-phone::before {
+  display: block;
+  content: "";
+  background: url("../assets/Phone Icon.svg") no-repeat center/cover;
+  width: 27px;
+  height: 27px;
+  position: relative;
+  top: 0;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+
+}
+.form-wrapper {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 15px;
+  font-weight: bold;
+  color: $primary-color;
+
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 15px;
+  font-weight: bold;
+  color: $primary-color;
+
+}
+input[type="text"]{
+  height: 42px;
+  border: none;
+  border-bottom: 1px solid $color-grey;
+
+}
+input[type="email"]{
+  height: 42px;
+  border: none;
+  border-bottom: 1px solid $color-grey;
+
+}
+.checkbox-agr{
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox {
+  cursor: pointer;
+  display: flex;
+  color: $color-grey;
+  font-family: $text-font;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  padding: 0 0 20px 0;
+
+}
+.checkbox span {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border: 1px solid $color-grey;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 4px
+}
+input:checked + span {
+  background: url("../assets/Checkmark.svg") no-repeat center/contain;
+}
+button[type="submit"] {
+  background: $primary-color;
+  box-shadow: 5px 10px 14px #07ACE629;
+  border-radius: 35px;
+  align-self: flex-end;
+  padding: 20px 97px;
+  border: none;
+  color: $color-white;
+  text-transform: capitalize;
+  font-size: 13px;
+  font-family: var(--text-font);
+  line-height: 18px;
+}
