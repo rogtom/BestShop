@@ -7,14 +7,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;;
+  margin-top: 150px;
+  margin-bottom: 60px;
 }
 
 .questions-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 155px;
 }
 
 .questions-texts {
@@ -64,7 +64,7 @@
 .cont-phone {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .cont-phone::before {
@@ -84,7 +84,7 @@ form {
 
 }
 .form-wrapper {
-  width: 440px;
+  max-width: 440px;
   display: flex;
   flex-direction: column;
 }

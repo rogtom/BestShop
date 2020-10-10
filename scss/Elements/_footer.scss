@@ -41,17 +41,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 136px;
+  margin-right: 136px;
 
 }
 .tweet {
-  background: url("../assets/Twitter.svg") no-repeat center/cover;
+  background: url("../../assets/Twitter.svg") no-repeat center/cover;
   width: 24px;
   height: 24px;
   margin-right: 20px;
 }
 .face {
-  background: url("../assets/Facebook.svg") no-repeat center/cover;
+  background: url("../../assets/Facebook.svg") no-repeat center/cover;
   width: 24px;
   height: 24px;
 }

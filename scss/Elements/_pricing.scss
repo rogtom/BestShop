@@ -5,12 +5,11 @@
   flex-direction: column;
 
   h2 {
+    font-family: $prim-font;
     font-size: 36px;
     font-weight: 400;
     line-height: 42px;
-    padding: 100px 0 70px 0;
-    display: flex;
-    flex-direction: column;
+
   }
 }
 
@@ -19,6 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
 .prise-card-box {
@@ -43,14 +43,14 @@
   align-items: center;
   justify-content: flex-start;
   font-family: $text-font;
-
-  h5 {
+}
+.prise-card h5 {
     font-size: 20px;
     font-weight: bold;
     padding-top: 51px;
     padding-bottom: 15px;
   }
-}
+
 
 .prise {
   font-size: 46px;
@@ -59,6 +59,9 @@
 
 .ofer {
   font-size: 12px;
+  font-family: $prim-font;
+  font-weight: 600;
+
 }
 
 .pos {
@@ -70,6 +73,55 @@
   padding-bottom: 20px;
   font-size: 14px;
 }
+
+.green-cbox input[type="checkbox"] {
+  appearance: none;
+  width: 11px;
+  height: 11px;
+  border: 1px solid $color-green;
+  border-radius: 3px;
+  outline: none;
+  vertical-align: middle;
+  position: relative;
+
+  &:checked:after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border:  solid $color-green;
+    border-width: 0 1px 1px 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:  translate( -50%, -50%) rotate(45deg);
+  }
+}
+
+.red-cbox input[type="checkbox"] {
+  appearance: none;
+  width: 11px;
+  height: 11px;
+  border: 1px solid $color-redish;
+  border-radius: 3px;
+  outline: none;
+  vertical-align: middle;
+  position: relative;
+
+  &:checked:after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border:  solid $color-redish;
+    border-width: 0 1px 1px 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:  translate( -50%, -50%) rotate(45deg);
+  }
+}
+
+
+
 
 .prise-card-btn {
   padding: 16px 57px;

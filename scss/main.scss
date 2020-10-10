@@ -9,8 +9,12 @@
 @import "Elements/benefs";
 @import "Elements/pricing";
 @import "Elements/questions";
+@import "Elements/footer";
 
 //ALL
+* {
+  box-sizing: border-box
+}
 
 body {
   box-sizing: border-box;
@@ -25,14 +29,80 @@ a {
 
 
 //MEDIA
-@media (max-width: 1024px) {
+
+
+
+
+
+@media (max-width: 1350px) {
+  .prises-wrapper .prise-card-wrapper {
+    flex-direction: column;
+    align-items: center;
+
+    .prise-card-box {
+      margin: 0;
+    }
+  }
+}
+
+
+
+
+@media (max-width: 1050px) {
   .stats-wrapper {
     justify-content: space-evenly;
   }
   .benefs-card1 {
     flex-direction: column-reverse;
-    width: auto;
+
+    .card1-logo {
+      padding-top: 50px;
+    }
   }
+  .benefs-card2 {
+    flex-direction: column;
+
+    .card2-logo {
+      padding-top: 50px;
+    }
+
+    .card2-texts {
+      margin-bottom: 50px;
+    }
+  }
+  .benefs-card3 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    .card3-texts {
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .card3-logo {
+      width: 100%;
+
+    }
+  }
+
+  .questions-wrapper {
+    flex-direction: column;
+  }
+
+  .questions-text-contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .form-wrapper {
+
+    margin-top: 60px;
+  }
+
 }
 
 
@@ -43,52 +113,13 @@ a {
   .opening-banner {
     height: 420px;
   }
-  .benefs-card1 {
-    flex-direction: column-reverse;
-    width: auto;
-
-
-
-    .card1-texts h2 {
-        font-size: 30px;
-      }
-
-    .card1-texts p {
-      width: 300px;
-        font-size: 16px;
-
-        &::after {
-          display: none;
-        }
-      }
-
-    .card1-logo {
-      position: relative;
-
-      img {
-        width: 192px * 1.5;
-        height: 109px *1.5;
-        padding: 37px 65px 0 55px;
-      }
-
-      &::after {
-        display: block;
-        content: "";
-        background: $color-redish;
-        width: 90px;
-        height: 90px;
-        border-radius: 41px;
-        position: absolute;
-        top: 15px;
-        right: 60px;
-        transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
-        z-index: -1;
-      }
-    }
-  }
 }
 
-@media (max-width: 470px) {
+
+
+
+
+@media (max-width: 570px) {
   .header-wrapper .header-nav {
     display: none;
   }
@@ -131,20 +162,163 @@ a {
     margin-top: 25px;
     margin-bottom: 50px;
   }
-  //.benefs-card .card1-texts p{
-  //  width: 272px;
-  //}
+
+  .benefs-wrapper {
+    padding: 0 30px;
+    min-width: 300px;
+
+    .card1-logo {
+      padding-top: 0;
+
+      .logo-comp {
+        width: 192px;
+        height: 109px;
+        margin-top: 37px;
+
+        &::after {
+          width: 90px;
+          height: 90px;
+        }
+      }
+    }
+
+    .card1-texts {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h2 {
+        font-size: 30px;
+        line-height: 35px;
+        padding-top: 27px;
+
+      }
+
+      p {
+        max-width: 272px;
+        padding-bottom: 30px;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+  }
+
 
   .benefs-card2 {
     flex-direction: column;
+
+    .card2-logo {
+
+      .logo-phone {
+        width: 175px;
+        height: 135px;
+
+        &::after {
+          width: 131px;
+          height: 131px;
+        }
+      }
+
+    }
+
+    .card2-texts {
+      padding-left: 20px;
+      padding-bottom: 20px;
+      margin-bottom: 0;
+
+      &::after {
+        display: none;
+      }
+
+      h2 {
+        font-size: 30px;
+        line-height: 35px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 19px;
+        max-width: 272px;
+        padding-bottom: 0;
+      }
+    }
   }
 
   .benefs-card3 {
-    flex-direction: column;
+    .card3-texts {
+      h2 {
+        font-size: 30px;
+        line-height: 35px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 19px;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+    .card3-logo {
+      img {
+        width: 299px;
+        height: 207px;
+        margin-right: 50px;
+        margin-top: 20px;
+      }
+    }
   }
 
 
+  .prise-card {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 293px;
+    height: 251px;
+
+    .price-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h5 {
+      padding: 0;
+  }
+
+    .pos {
+      padding: 0;
+    }
+
+  }
+  .prise-card2:hover {
+    width: 339px;
+    height: 277px;
+  }
+
+  .form-wrapper {
+    max-width: 312px;
+  }
+  .footer-logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 17px;
+  }
+
+  .social-icons {
+    margin-right: 30px;
+  }
+
+
+
 }
+
 
 
 
